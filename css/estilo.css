@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 60px;
+
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.section1{
+   
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    margin: 50px;
+    text-align: left;
+}
+
+.padre{
+    background-color:coral;
+    width: 90%;
+    height: 80vh;
+    border: solid wheat;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas: 
+    "a a"
+    "bc"
+    "ef"
+    ;
+}
+
+.hijo{
+    background-color: azure;
+}
