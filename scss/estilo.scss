@@ -1,0 +1,114 @@
+$bg-color: #1e3e9450;
+$gris: #252525;
+$claro: #89b5bb;
+$fondo: #2968c7c2;
+$alto: 300px;
+$ancho: 60px;
+
+@import "mixin";
+
+body{
+    background-color: $bg-color;
+}
+
+.color_boton{
+    background-color: black;
+    color: white;
+}
+
+.w-80{
+    width:100% ;
+    height: auto;
+    margin: auto;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    .nav{
+        height: 20px;
+    }
+    .logo{
+        width: $ancho;
+        .item{
+            color: $gris;
+            &:hover{
+                background-color: $bg-color;
+            }
+        }
+         
+    }
+}
+
+main{
+    .section1{
+        height: auto;
+        background-color: $bg-color;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: left;
+    }
+    .section2{
+        .titulo{
+            text-align: center;
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
+        
+        }
+        .caja1{
+            @include cajas()
+            transition: height 2s;
+            &:hover{
+                height: 600px;
+            }
+
+        }
+        .caja2{
+            @include cajas()
+            transition: height 2s;
+            &:hover{
+                height: 600px;
+            }
+
+        }
+        .caja3{
+            @include cajas()
+            transition: height 2s;
+            &:hover{
+                height: 600px;
+            }
+        }
+        .historia{
+            text-align: center;
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
+        }
+        .nosotros{
+            @include nosotros()
+        }
+
+    }
+    .section3{
+        .preguntas{
+            @include preguntas()
+        }
+
+    }
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+footer{
+    @include footer()
+}

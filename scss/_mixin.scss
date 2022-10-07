@@ -1,0 +1,27 @@
+@mixin cajas () {
+    background-color: $gris;
+    color: aliceblue;
+    height: 300px;
+}
+
+@mixin nosotros {
+    background-color: $fondo;
+    color: aliceblue;
+    height: 700px;
+    
+}
+@mixin footer {
+    color: $gris;
+    background-color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+@mixin preguntas {
+    height: 300px;
+    text-align: center;
+    
+    
+}

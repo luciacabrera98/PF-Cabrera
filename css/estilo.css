@@ -1,98 +1,90 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+body {
+  background-color: #1e3e9450; }
 
-.logo{
-    width: 60px;
-}
+.color_boton {
+  background-color: black;
+  color: white; }
 
-body{
-    background-color:rgba(130, 211, 214, 0.308);
-}
+.w-80 {
+  width: 100%;
+  height: auto;
+  margin: auto; }
 
-.section1{
-    height: auto;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 30px;
-    margin: 50px;
-    text-align: left;
-}
+header {
+  margin: 0;
+  padding: 0; }
+  header .nav {
+    height: 20px; }
+  header .logo {
+    width: 60px; }
+    header .logo .item {
+      color: #252525; }
+      header .logo .item:hover {
+        background-color: #1e3e9450; }
 
-.caja1{
-    height: 300px;
-    transition: height 2s;
+main .section1 {
+  height: auto;
+  background-color: #1e3e9450;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: left; }
 
-}
-.caja1:hover{
-    height: 600px;
-    
-}
+main .section2 .titulo {
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
 
-.caja2{
-    height: 300px;
-    transition: height 2s;
+main .section2 .caja1 {
+  background-color: #252525;
+  color: aliceblue;
+  height: 300px;
+  transition: height 2s; }
+  main .section2 .caja1:hover {
+    height: 600px; }
 
-}
-.caja2:hover{
-    height: 600px;
-    
-}
+main .section2 .caja2 {
+  background-color: #252525;
+  color: aliceblue;
+  height: 300px;
+  transition: height 2s; }
+  main .section2 .caja2:hover {
+    height: 600px; }
 
-.caja3{
-    height: 300px;
-    transition: height 2s;
+main .section2 .caja3 {
+  background-color: #252525;
+  color: aliceblue;
+  height: 300px;
+  transition: height 2s; }
+  main .section2 .caja3:hover {
+    height: 600px; }
 
-}
-.caja3:hover{
-    height: 600px;
-    
-}
+main .section2 .historia {
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
 
-h1{
-    text-align: center;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
+main .section2 .nosotros {
+  background-color: #2968c7c2;
+  color: aliceblue;
+  height: 700px; }
 
-}
+main .section3 .preguntas {
+  height: 300px;
+  text-align: center; }
 
-h2{
-    text-align: center;
-  
-}
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
-.nosotros{
-    height: 700px;
-}
-
-@keyframes aparecer{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-footer{
-    background-color: white;
-}
-
-h5{
-    text-align: center;
-}
-
-.redes{
-    text-align: center;
-}
-
-.w-80{
-    width:100% ;
-    height: auto;
-    margin: auto;
-}
+footer {
+  color: #252525;
+  background-color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
