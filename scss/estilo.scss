@@ -58,29 +58,14 @@ main{
             animation-iteration-count: infinite;
         
         }
-        .caja1{
-            @include cajas()
-            transition: height 2s;
-            &:hover{
-                height: 600px;
-            }
-
-        }
-        .caja2{
-            @include cajas()
-            transition: height 2s;
-            &:hover{
-                height: 600px;
-            }
-
-        }
-        .caja3{
-            @include cajas()
-            transition: height 2s;
-            &:hover{
-                height: 600px;
-            }
-        }
+ .caja1{
+            @include cajas()}
+            
+ .caja2{
+           @include cajas()}   
+.caja3{
+        @include cajas()}
+        
         .historia{
             text-align: center;
             animation-duration: 2s;
@@ -90,15 +75,11 @@ main{
         .nosotros{
             @include nosotros()
         }
-
-    }
-    .section3{
+    
+.section3{
         .preguntas{
-            @include preguntas()
-        }
-
+            @include preguntas()      }
     }
-}
 
 @keyframes aparecer{
     0%{
